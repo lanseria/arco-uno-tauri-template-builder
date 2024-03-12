@@ -12,17 +12,20 @@ async function backendAdd() {
 <template>
   <div class="mx-auto w-9/12">
     <div class="my-6 justify-center border border-white/10 text-center">
-      <div class="p-8 text-lg font-bold">
+      <h1 class="text-blue-5 font-bold">
+        {{ msg }}
+      </h1>
+      <div class="p-4 text-lg font-bold">
         Count is: {{ count }}
       </div>
 
       <div class="w-full space-x-2">
-        <button type="button" class="btn" @click="count++">
+        <AButton type="primary" @click="count++">
           Add 1
-        </button>
-        <button type="button" class="btn" @click="backendAdd">
+        </AButton>
+        <AButton type="primary" @click="backendAdd">
           Add 2 in backend
-        </button>
+        </AButton>
       </div>
     </div>
   </div>
